@@ -1,3 +1,28 @@
+# GenAI-SummerCamp-ConversationalAssistant
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [GenAI Summer Camp Details](#genai-summer-camp-details)
+3. [Conversational Assistant Prompts](#conversational-assistant-prompts)
+   - [Router Prompt](#router-prompt)
+   - [Question Prompt](#question-prompt)
+   - [Application Prompt](#application-prompt)
+4. [Open Questions & Responses](#open-questions--responses)
+   - [Optimization Process](#optimization-process)
+   - [Prompt Performance Testing](#prompt-performance-testing)
+   - [Considered Edge Cases](#considered-edge-cases)
+5. [Documentation](#documentation)
+   - [Approach](#approach)
+   - [Running the Solution](#running-the-solution)
+6. [Contribution & Collaboration](#contribution--collaboration)
+7. [Contact Information](#contact-information)
+8. [Acknowledgments](#acknowledgments)
+9. [Using ChatGPT for Documentation](#using-chatgpt-for-documentation)
+
+## Introduction
+
+The GenAI Summer Camp Assistant is a conversational AI designed to provide parents with information about the GenAI Summer Camp and facilitate the sign-up process for their kids.
+
 ## GenAI Summer Camp Details
 
 The GenAI Summer Camp is a place where imagination meets innovation, offering a unique and immersive experience for young minds. The camp is designed to foster creativity and pique interest in cutting-edge technologies. With offerings like Robotics and AI, Virtual Reality, Augmented Reality, and Coding, campers are given the tools to explore, create, and innovate. The camp values imagination, collaboration, and lifelong learning.
@@ -13,13 +38,42 @@ The `question` prompt is optimized for answering questions about the camp. It le
 ### Application Prompt
 The `application` prompt is designed for handling camp sign-ups. Similar to the question prompt, it uses a few-shot approach, guiding the assistant based on past examples to handle the application process smoothly.
 
+## Open Questions & Responses
+
+### Optimization Process
+#### 1. **Knowledge Enhancement using RAG**:
+Implement RAG with a vector database containing information on various summer camps to fetch relevant external data and minimize hallucinations.
+
+#### 2. **Fine-Tuning the Model**:
+Utilize OpenAI's API to fine-tune the `gpt-3.5-turbo` model for improved conversational experience.
+
+#### 3. **Advanced Age Validation**:
+Develop a dynamic age validation system that adjusts to camp policy changes.
+
+#### 4. **Database Integration**:
+Integrate with a real-time database for effective application management.
+
+#### 5. **Feedback Mechanism**:
+Instate a feedback loop to refine the assistant's responses.
+
+#### 6. **Handling Edge Cases**:
+Address intricate edge cases such as special characters, multiple queries, and uncommon inputs.
+
+#### 7. **Memory Optimization**:
+Optimize memory usage by refining prompts, managing conversation memory, simplifying chains, handling data dynamically, and monitoring and profiling regularly.
+
+### Prompt Performance Testing
+
+Evaluate the assistant's responses through manual evaluation, A/B testing with parents, and monitoring response times.
+
+### Considered Edge Cases
+Address potential edge cases like managing multiple applications, recognizing alternate communication preferences, handling specialized inquiries, sensitive information handling, and more.
+
 ## Documentation
 
 ### Approach
 
-The GenAI Summer Camp Assistant is developed using a modular approach. With the use of the `langchain` library, various chains like `MultiPromptChain` and `ConversationChain` are implemented. Memory is managed with `ConversationBufferMemory`, ensuring that past interactions are remembered, making the conversation flow more naturally.
-
-The prompts, like `FewShotChatMessagePromptTemplate`, employ a few-shot learning approach. By providing the assistant with a series of examples, it can generalize and respond to diverse user queries effectively.
+The GenAI Summer Camp Assistant is developed using a modular approach with the `langchain` library. The assistant uses various chains and memory management tools for a natural conversational flow, and a few-shot learning approach for diverse user queries.
 
 ### Running the Solution
 
@@ -32,16 +86,16 @@ To run the solution:
 
 ## Contribution & Collaboration
 
-The project is open to collaboration. Feel free to fork the repository, make enhancements, and create pull requests.
+The project is open to collaboration. Fork the repository, make enhancements, and create pull requests.
 
 ## Contact Information
 
-For further queries or feedback, you can reach out at [Your Email Here].
+For further queries or feedback, reach out at [Your Email Here].
 
 ## Acknowledgments
 
-Special thanks to OpenAI's ChatGPT for aiding in the creation of this README and to all contributors and testers who provided invaluable insights.
+Thanks to OpenAI's ChatGPT for aiding in creating this README and to all contributors and testers for their insights.
 
 ## Using ChatGPT for Documentation
 
-Throughout the development of this README, ChatGPT was extensively used to assist in formatting, structuring, and generating content. By providing prompts and seeking clarifications, ChatGPT offered suggestions, templates, and refinements, ensuring a comprehensive and user-friendly document.
+Throughout this README's development, ChatGPT was extensively used for formatting, structuring, and generating content, ensuring a comprehensive and user-friendly document.
