@@ -146,23 +146,21 @@ To run the solution:
 1. **Setup**:
    - Ensure you have Python 3.9.7 installed. If not, you can download and install it from the [official Python website](https://www.python.org/downloads/).
    - Open the project in Visual Studio Code (VSCode).
+   - Install the necessary libraries using the integrated terminal in VSCode:
+
+```bash
+pip install openai langchain json
+
 
 2. **File Overview**:
    - **`scripts/GenAI_Camp_Assistant_Builder.ipynb`**: The main notebook where the conversational assistant is built.
    - **`scripts/generate_camp_details.py`**: A script that aids in generating details about the GenAI Summer Camp. You need to run this script to get the camp's details.
    - **`data/generation_prompt.txt`**: The output from `generate_camp_details.py`, which contains the generated camp details.
-
-3. **Library Installation**:
-   - Open the integrated terminal in VSCode.
-   - Navigate to the project directory.
-     ```bash
-     cd path/to/your/project/directory
-     ```
    
-4. **OpenAI Key Setup**:
+3. **OpenAI Key Setup**:
    - The `GenAI_Camp_Assistant_Builder.ipynb` requires an OpenAI API key for execution. Ensure you add your OpenAI key in the notebook where indicated.
 
-5. **Interacting with the Assistant**:
+4. **Interacting with the Assistant**:
    - To get the best results, use the following example prompts when interacting with the assistant:
      - **General Information**: "Tell me about the GenAI Summer Camp."
      - **Offerings Inquiry**: "What activities and courses do you offer at the camp?"
