@@ -35,15 +35,74 @@
 [Description and code for the application prompt]
 
 ## Open Questions & Responses
-### Optimization Process
+### How would you optimize the process if you had more time?
 1. If I had more time I would implement Retrieval-Augmented Generation (RAG) with information on different summer camps stored in a vector database. RAG would fetch relevant data from outside the foundation model and would enhance the input with this data. This would make the current assistant more knowledgeable about summer camps in general and would be more helpful to users. It would also reduce hallucinations from occurring.
-2.  Additionally, I would fine-tune the gpt-3.5-turbo model with openai's api. I would use synthetically generate training data contains assistant responses are more personal. This would improve the overall user experience and users will not feeling like they are talking with a bot but with a human. (This can also be altered in the system instruction but fine-tuning achieves better results).
+2. I would fine-tune the gut-3.5-turbo model using Openai's API. I would synthetically generate training data that contains personalized assistant responses. This would improve the overall user experience and users will not feel like they are talking with a bot but with a human. (This can also be achieved in the system prompt but fine-tuning achieves better results).
+3. Develop a more sophisticated age validation system to automatically adjust to any changes in camp policy.
+4. Integrate with a real-time database to manage and track applications seamlessly.
+5. Establish a feedback mechanism to continuously refine and enhance the assistant's responses.
+6. Address nuanced edge cases such as handling special characters, multiple queries in a single prompt, or uncommon user inputs.
 
-### Prompt Performance Testing
-[Your methods and findings on testing the prompts' performance]
+### How would you test the prompts' performance?
+
+#### 1. Manual Evaluation
+
+**Step-by-Step Process**:
+
+- **Document Creation**:
+  - Draft a range of diverse user prompts.
+  
+- **User Testing**:
+  - Have users test the assistant using the listed prompts.
+  - Encourage additional relevant prompts from users.
+  
+- **Evaluation Criteria**:
+  - For each response from the assistant, evaluators should consider if the assistant:
+    1. Hallucinates.
+    2. Repeats itself.
+    3. Responds impersonally.
+    4. Gives inappropriate answers.
+
+#### 2. A/B Testing with Parents
+
+- **Setup**:
+  - Design two or more variations of the assistant, differing in prompts or response structures.
+
+- **Distribution**:
+  - Randomly segment parent testers, ensuring each subgroup interacts with a unique version of the assistant.
+
+- **Objective**:
+  - Monitor metrics like satisfaction rate, completion rate for sign-ups, and response clarity.
+
+- **Feedback Collection**:
+  - Gather feedback on user experience, preferences, and any suggestions.
+
+- **Analysis**:
+  - Evaluate each version's performance based on data and feedback. The version with superior metrics becomes the preferred choice.
+
+- **Iteration**:
+  - Use insights from the A/B test to refine the assistant, iterating as needed.
+
+#### 3. Response Time Monitoring
+
+- Regularly monitor response times to ensure swift and efficient operations, especially during peak demand periods.
+
 
 ### Considered Edge Cases
-[Edge cases you've identified and considered]
+I would add handling of the following edge cases:
+
+Sensitive Information Handling: Ensure that the assistant doesn't accidentally store or misuse sensitive information like phone numbers, email addresses, etc.
+
+Repeated Queries: Parents might ask the same question in different ways. The assistant should be able to recognize this and not provide redundant or conflicting information.
+
+Multilingual Support: Depending on the region, parents might ask questions in different languages. Adding support for major languages can be beneficial.
+
+Emergency Situations: If a parent expresses a concern about an emergency or a serious issue, the assistant should be equipped to escalate the matter or provide immediate contact details.
+
+Dietary requirements: The user 
+
+Age Outliers: While we validate the age based on the camp's age range, there might be special cases where a child slightly outside the age range might still want to attend due to exceptional circumstances. The assistant should be able to handle such nuanced scenarios.
+
 
 ## Documentation
 ### Approach
