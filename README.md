@@ -27,7 +27,7 @@ The GenAI Summer Camp is a place where imagination meets innovation, offering a 
 ## Conversational Assistant Prompts
 
 ### Router Prompt
-The router prompt is the initial touchpoint for interactions with the GenAI Summer Camp Assistant. Using the FewShotChatMessagePromptTemplate, it sets the context for the conversation. By analyzing the intent behind the user's query, it efficiently directs them to either gather more information about the camp or initiate the sign-up process.
+The `router prompt` is the initial touchpoint for interactions with the GenAI Summer Camp Assistant. Using the `FewShotChatMessagePromptTemplate`, it sets the context for the conversation. By analyzing the intent behind the user's query, it efficiently directs them to either gather more information about the camp or initiate the sign-up process.
 
 ### Question Prompt
 The `question` prompt is optimized for answering questions about the camp. It leverages the `FewShotChatMessagePromptTemplate` with a system message that offers a backdrop about the assistant's role and the camp's details.
