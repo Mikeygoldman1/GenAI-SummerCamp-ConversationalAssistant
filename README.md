@@ -148,7 +148,7 @@ To run the solution:
    - Open the project in Visual Studio Code (VSCode).
 
 2. **File Overview**:
-   - **`GenAI_Camp_Assistant_Builder.ipynb`**: The main notebook where the conversational assistant is built. Located in the root directory.
+   - **`scripts/GenAI_Camp_Assistant_Builder.ipynb`**: The main notebook where the conversational assistant is built.
    - **`scripts/generate_camp_details.py`**: A script that aids in generating details about the GenAI Summer Camp. You need to run this script to get the camp's details.
    - **`data/generation_prompt.txt`**: The output from `generate_camp_details.py`, which contains the generated camp details.
 
