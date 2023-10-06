@@ -79,10 +79,35 @@ The GenAI Summer Camp Assistant is developed using a modular approach with the `
 
 To run the solution:
 
-1. Ensure you have Python 3.9.7 installed.
-2. Open the project in Visual Studio Code (VSCode).
-3. Install necessary libraries using the integrated terminal in VSCode.
-4. Execute the provided Python scripts or Jupyter notebooks.
+1. **Setup**:
+   - Ensure you have Python 3.9.7 installed. If not, you can download and install it from the [official Python website](https://www.python.org/downloads/).
+   - Open the project in Visual Studio Code (VSCode).
+
+2. **Library Installation**:
+   - Open the integrated terminal in VSCode.
+   - Navigate to the project directory.
+     ```bash
+     cd path/to/your/project/directory
+     ```
+   - If a `requirements.txt` file is provided, install the necessary libraries using:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Execution**:
+   - Execute the provided Python scripts or Jupyter notebooks within VSCode.
+
+4. **Interacting with the Assistant**:
+   - To get the best results, use the following example prompts when interacting with the assistant:
+     - **General Information**: "Tell me about the GenAI Summer Camp."
+     - **Offerings Inquiry**: "What activities and courses do you offer at the camp?"
+     - **Pricing Details**: "How much does it cost to enroll my child in the camp?"
+     - **Sign-up Process**: "I'd like to sign up my child for the camp. Can you guide me through the process?"
+     - **Age Restrictions**: "What is the age range for camp attendees?"
+
+5. **Feedback**:
+   - After testing, if you encounter any issues or have suggestions, please refer to the "Contact Information" section.
+
 
 ## Contribution & Collaboration
 
