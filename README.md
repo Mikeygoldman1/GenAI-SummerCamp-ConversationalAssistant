@@ -83,21 +83,22 @@ To run the solution:
    - Ensure you have Python 3.9.7 installed. If not, you can download and install it from the [official Python website](https://www.python.org/downloads/).
    - Open the project in Visual Studio Code (VSCode).
 
-2. **Library Installation**:
+2. **File Overview**:
+   - **`GenAI_Camp_Assistant_Builder.ipynb`**: The main notebook where the conversational assistant is built. Located in the root directory.
+   - **`scripts/generate_camp_details.py`**: A script that aids in generating details about the GenAI Summer Camp. You need to run this script to get the camp's details.
+   - **`data/generation_prompt.txt`**: The output from `generate_camp_details.py`, which contains the generated camp details.
+
+3. **Library Installation**:
    - Open the integrated terminal in VSCode.
    - Navigate to the project directory.
      ```bash
      cd path/to/your/project/directory
      ```
-   - If a `requirements.txt` file is provided, install the necessary libraries using:
-     ```bash
-     pip install -r requirements.txt
-     ```
+   
+4. **OpenAI Key Setup**:
+   - The `GenAI_Camp_Assistant_Builder.ipynb` requires an OpenAI API key for execution. Ensure you add your OpenAI key in the notebook where indicated.
 
-3. **Execution**:
-   - Execute the provided Python scripts or Jupyter notebooks within VSCode.
-
-4. **Interacting with the Assistant**:
+5. **Interacting with the Assistant**:
    - To get the best results, use the following example prompts when interacting with the assistant:
      - **General Information**: "Tell me about the GenAI Summer Camp."
      - **Offerings Inquiry**: "What activities and courses do you offer at the camp?"
@@ -105,22 +106,7 @@ To run the solution:
      - **Sign-up Process**: "I'd like to sign up my child for the camp. Can you guide me through the process?"
      - **Age Restrictions**: "What is the age range for camp attendees?"
 
-5. **Feedback**:
-   - After testing, if you encounter any issues or have suggestions, please refer to the "Contact Information" section.
-
-
-## Contribution & Collaboration
-
-The project is open to collaboration. Fork the repository, make enhancements, and create pull requests.
-
-## Contact Information
-
-For further queries or feedback, reach out at [Your Email Here].
-
-## Acknowledgments
-
-Thanks to OpenAI's ChatGPT for aiding in creating this README and to all contributors and testers for their insights.
 
 ## Using ChatGPT for Documentation
 
-Throughout this README's development, ChatGPT was extensively used for formatting, structuring, and generating content, ensuring a comprehensive and user-friendly document.
+Throughout this README's development, ChatGPT was used for formatting, structuring, ensuring a comprehensive and user-friendly document.
