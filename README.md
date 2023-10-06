@@ -14,10 +14,7 @@
 5. [Documentation](#documentation)
    - [Approach](#approach)
    - [Running the Solution](#running-the-solution)
-6. [Contribution & Collaboration](#contribution--collaboration)
-7. [Contact Information](#contact-information)
-8. [Acknowledgments](#acknowledgments)
-9. [Using ChatGPT for Documentation](#using-chatgpt-for-documentation)
+6. [Using ChatGPT for Documentation](#using-chatgpt-for-documentation)
 
 ## Introduction
 
