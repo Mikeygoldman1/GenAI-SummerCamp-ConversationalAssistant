@@ -61,10 +61,77 @@ Optimize memory usage by refining prompts, managing conversation memory, simplif
 
 ### Prompt Performance Testing
 
-Evaluate the assistant's responses through manual evaluation, A/B testing with parents, and monitoring response times.
+#### 1. Manual Evaluation
+
+**Step-by-Step Process**:
+
+- **Document Creation**:
+  - Draft a range of diverse user prompts.
+  
+- **User Testing**:
+  - Have users test the assistant using the listed prompts.
+  - Encourage additional relevant prompts from users.
+  
+- **Evaluation Criteria**:
+  - For each response from the assistant, evaluators should consider if the assistant:
+    1. Hallucinates.
+    2. Repeats itself.
+    3. Responds impersonally.
+    4. Gives inappropriate answers.
+
+#### 2. A/B Testing with Parents
+
+- **Setup**:
+  - Design two or more variations of the assistant, differing in prompts or response structures.
+
+- **Distribution**:
+  - Randomly segment parent testers, ensuring each subgroup interacts with a unique version of the assistant.
+
+- **Objective**:
+  - Monitor metrics like satisfaction rate, completion rate for sign-ups, and response clarity.
+
+- **Feedback Collection**:
+  - Gather feedback on user experience, preferences, and any suggestions.
+
+- **Analysis**:
+  - Evaluate each version's performance based on data and feedback. The version with superior metrics becomes the preferred choice.
+
+- **Iteration**:
+  - Use insights from the A/B test to refine the assistant, iterating as needed.
+
+#### 3. Response Time Monitoring
+
+- Regularly monitor response times to ensure swift and efficient operations, especially during peak demand periods.
 
 ### Considered Edge Cases
-Address potential edge cases like managing multiple applications, recognizing alternate communication preferences, handling specialized inquiries, sensitive information handling, and more.
+
+#### 1. **Multiple Children Applications**:
+- Ensure the assistant can manage applications for multiple children from a single parent simultaneously, without confusion.
+
+#### 2. **Alternate Communication Preferences**:
+- Beyond just phone and email, recognize and process other modes of communication that parents might prefer, such as messaging apps or postal addresses.
+
+#### 3. **Specialized Inquiries**:
+- Handle inquiries related to:
+  - **Dietary Restrictions**: Cater to specific dietary needs or allergies.
+  - **Accessibility Provisions**: Address questions about facilities for differently-abled children.
+  - **Unique Camp Accommodations**: Respond to queries about special camp provisions or services.
+
+#### 4. **Sensitive Information Handling**:
+- Ensure that the assistant does not inadvertently store or misuse sensitive information, including phone numbers and email addresses.
+
+#### 5. **Repeated Queries**:
+- Recognize and address situations where parents might phrase the same question differently. The assistant should provide consistent information without redundancy.
+
+#### 6. **Multilingual Support**:
+- Depending on the demographic, parents might interact in various languages. It would be beneficial for the assistant to support major languages, ensuring inclusivity.
+
+#### 7. **Emergency Situations**:
+- If a parent indicates an emergency or a grave concern, the assistant should be primed to escalate the situation or offer immediate contact details for resolution.
+
+#### 8. **Age Outliers**:
+- While age validation is crucial, the assistant should also cater to exceptions. For instance, if a child slightly outside the stipulated age range displays exceptional circumstances or reasons for attendance, the assistant should be equipped to address such nuanced scenarios.
+
 
 ## Documentation
 
