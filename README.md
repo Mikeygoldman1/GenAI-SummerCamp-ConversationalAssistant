@@ -150,7 +150,7 @@ To run the solution:
 
 ```bash
 pip install openai langchain json
-
+```
 
 2. **File Overview**:
    - **`scripts/GenAI_Camp_Assistant_Builder.ipynb`**: The main notebook where the conversational assistant is built.
