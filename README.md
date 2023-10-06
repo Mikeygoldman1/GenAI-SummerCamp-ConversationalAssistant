@@ -36,7 +36,8 @@
 
 ## Open Questions & Responses
 ### Optimization Process
-[Your response to how you'd optimize the process with more time]
+1. If I had more time I would implement Retrieval-Augmented Generation (RAG) with information on different summer camps stored in a vector database. RAG would fetch relevant data from outside the foundation model and would enhance the input with this data. This would make the current assistant more knowledgeable about summer camps in general and would be more helpful to users. It would also reduce hallucinations from occurring.
+2.  Additionally, I would fine-tune the gpt-3.5-turbo model with openai's api. I would use synthetically generate training data contains assistant responses are more personal. This would improve the overall user experience and users will not feeling like they are talking with a bot but with a human. (This can also be altered in the system instruction but fine-tuning achieves better results).
 
 ### Prompt Performance Testing
 [Your methods and findings on testing the prompts' performance]
